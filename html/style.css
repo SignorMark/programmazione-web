@@ -1,0 +1,152 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hamburger Menu */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #000;
+    transition: 0.4s;
+}
+
+/* Media query for Hamburger Menu */
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav__list {
+        margin-top: 20px;
+    }
+}
+
+/* Header */
+.header {
+    background-color: #f30a0a;
+    color: #000000; /* Colore testo nero */
+    padding: 10px 0;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__item {
+    margin: 0 20px;
+}
+
+.nav__link {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Main content */
+.main {
+    background-color: rgb(255, 255, 255);
+    color: black; /* Colore testo nero */
+    padding: 20px;
+}
+
+/* Stili per i prodotti */
+.product {
+    display: inline-block; /* Per posizionare i prodotti uno accanto all'altro */
+    text-align: center;
+    margin: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px; /* Rimpicciolisci l'altezza massima dell'immagine */
+}
+
+.buy-button-container {
+    margin-top: 10px;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #f8a100;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #d1760d;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+}
+
+#section1 {
+    background-color: white; /* Colore bianco per sfondo sezione 1 */
+}
+
+/* Sfondo per la sezione 2 */
+#section2 {
+    background-color: greenyellow;
+    background-size: cover;
+    background-position: center;
+}
+
+.section__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section__subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section__list {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.section__item {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
